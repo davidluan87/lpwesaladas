@@ -274,7 +274,14 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
   min-width: 0;
 }
 
-/* ── Hero inline image ─────────────── */
+/* ── Hero VTurb video ─────────────── */
+.hero-vturb-wrap {
+  margin-top: 24px;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+}
 .hero-inline-img {
   margin-top: 24px;
   border-radius: var(--radius);
