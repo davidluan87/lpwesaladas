@@ -11,6 +11,16 @@
 
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- VTurb — otimização de carregamento -->
+  <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+  <link rel="preload" href="https://scripts.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/6a1e0747ff0c63194e1255e3/v4/player.js" as="script">
+  <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+  <link rel="preload" href="https://cdn.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/6a1e073700d664e51d6006d2/main.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://license.vturb.com">
+
   <!-- Utmify Pixel -->
   <script>
     window.pixelId = "6a151aa41d3eeaa1b305286b";
@@ -68,23 +78,15 @@
             Você monta uma vez… abre o pote todos os dias… e come fresquinha sem precisar preparar tudo de novo.
           </p>
 
-          <!-- ── Foto Virginia inline ── -->
-          <div class="hero-inline-img">
-            <img src="https://i.postimg.cc/1XY92PT2/VIRGINIA-QUEBRA-SILE-NCIO-E-SE-PRONUNCIA-APO-S-POLE-MICA-SOBRE-SUA-DIETA-DE-SALADA-NO-POTE-(2).png" alt="Virginia Fonseca com salada no pote" fetchpriority="high" decoding="async" />
-            <div class="floating-card card-1">
-              <div class="float-icon terra">30'</div>
-              <div class="float-meta">
-                <strong>30 minutos</strong>
-                <span>monta a semana toda</span>
-              </div>
-            </div>
-            <div class="floating-card card-2">
-              <div class="float-icon">7d</div>
-              <div class="float-meta">
-                <strong>Dura 7 dias</strong>
-                <span>fresquinha na geladeira</span>
-              </div>
-            </div>
+          <!-- ── Vídeo VTurb ── -->
+          <div class="hero-vturb-wrap">
+            <vturb-smartplayer id="vid-6a1e0747ff0c63194e1255e3" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+            <script type="text/javascript">
+              var s=document.createElement("script");
+              s.src="https://scripts.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/6a1e0747ff0c63194e1255e3/v4/player.js";
+              s.async=!0;
+              document.head.appendChild(s);
+            </script>
           </div>
 
           <div class="hero-cta-row">
