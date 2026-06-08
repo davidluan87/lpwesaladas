@@ -1028,11 +1028,25 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
 .value-total--highlight {
   background: var(--green-deep) !important;
   border-top: none !important;
-  padding: 20px 32px !important;
+  padding: 22px 32px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
-.value-total--highlight span { color: rgba(255,255,255,.7) !important; }
-.value-total--highlight strong { color: #fff !important; font-size: 26px !important; }
-.value-total--highlight s { color: rgba(255,255,255,.5) !important; }
+.value-total--highlight span {
+  color: rgba(255,255,255,.75) !important;
+  font-family: var(--font-mono) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+.value-total--highlight strong {
+  color: #fff !important;
+  font-family: var(--font-display) !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+}
+.value-total--highlight s { color: rgba(255,255,255,.45) !important; }
 
 /* ── Deal price bigger + green CTA ─────────────── */
 .deal-price--big .dp-int { font-size: clamp(80px, 20vw, 120px) !important; }
@@ -1041,12 +1055,13 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
 .deal-price--big .dp-installment { font-size: clamp(22px, 5vw, 36px) !important; }
 
 .deal-cta--green {
-  background: linear-gradient(135deg, var(--green-deep), var(--green)) !important;
+  background: linear-gradient(135deg, #1E5C3A, #2D7A4F) !important;
   color: #fff !important;
-  box-shadow: 0 4px 6px rgba(0,0,0,.15), 0 16px 32px rgba(45,122,79,.4) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,.15), 0 16px 32px rgba(45,122,79,.5) !important;
+  border: 2px solid rgba(255,255,255,.15) !important;
 }
-.deal-cta--green::before { background: linear-gradient(135deg, rgba(255,255,255,.1) 0%, transparent 60%) !important; }
-.deal-cta--green:hover { color: #fff !important; }
+.deal-cta--green::before { background: linear-gradient(135deg, rgba(255,255,255,.12) 0%, transparent 60%) !important; }
+.deal-cta--green:hover { background: linear-gradient(135deg, #163F28, #1E5C3A) !important; color: #fff !important; }
 
 /* ── Guarantee seal responsive ─────────────── */
 .guarantee-seal {
@@ -1229,14 +1244,17 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
 
 .deal-cta {
   width: 100%; margin: 0 auto 18px !important;
-  background: var(--white) !important;
-  color: var(--pink) !important;
   font-size: 17px !important; padding: 22px 28px !important;
   animation: cta-pulse 2.6s ease-in-out infinite;
+}
+/* Default (white pill sobre fundo rosa) */
+.deal-cta:not(.deal-cta--green) {
+  background: var(--white) !important;
+  color: var(--pink) !important;
   box-shadow: 0 4px 6px rgba(0,0,0,.1), 0 16px 32px rgba(0,0,0,.15) !important;
 }
-.deal-cta::before { background: linear-gradient(135deg, rgba(232,56,122,.05) 0%, transparent 60%); }
-.deal-cta:hover { color: var(--pink-deep) !important; }
+.deal-cta:not(.deal-cta--green)::before { background: linear-gradient(135deg, rgba(232,56,122,.05) 0%, transparent 60%); }
+.deal-cta:not(.deal-cta--green):hover { color: var(--pink-deep) !important; }
 @keyframes cta-pulse { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); box-shadow: 0 4px 6px rgba(0,0,0,.12), 0 24px 40px rgba(0,0,0,.2) !important; } }
 
 .deal-trust { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,.8); padding-top: 18px; border-top: 1px solid rgba(255,255,255,.15); position: relative; z-index: 1; }
