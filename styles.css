@@ -1026,7 +1026,7 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
 
 /* ── Value total highlight ─────────────── */
 .value-total--highlight {
-  background: var(--green-deep) !important;
+  background: #2C2C2C !important;
   border-top: none !important;
   padding: 22px 32px !important;
   display: flex !important;
@@ -1034,7 +1034,7 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
   align-items: center !important;
 }
 .value-total--highlight span {
-  color: rgba(255,255,255,.75) !important;
+  color: rgba(255,255,255,.65) !important;
   font-family: var(--font-mono) !important;
   font-size: 12px !important;
   letter-spacing: 0.18em !important;
@@ -1046,7 +1046,7 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
   font-size: 28px !important;
   font-weight: 400 !important;
 }
-.value-total--highlight s { color: rgba(255,255,255,.45) !important; }
+.value-total--highlight s { color: rgba(255,255,255,.4) !important; }
 
 /* ── Deal price bigger + green CTA ─────────────── */
 .deal-price--big .dp-int { font-size: clamp(80px, 20vw, 120px) !important; }
