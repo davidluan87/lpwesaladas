@@ -570,6 +570,34 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
 .av-copy .eyebrow { color: var(--pink-pale); }
 .av-copy .eyebrow::before { background: linear-gradient(90deg, var(--pink-pale), transparent); }
 
+/* Imagem de autoridade dentro do bloco Virginia */
+.av-authority-img {
+  margin-bottom: 28px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.1);
+}
+.av-authority-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Imagem da geladeira na seção de features */
+.features-fridge-img {
+  margin: 28px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+  border: 2px solid var(--pink-pale);
+}
+.features-fridge-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ── Camadas visual ─────────────── */
 .camada-item {
   padding: 12px 16px; border-radius: 10px;
