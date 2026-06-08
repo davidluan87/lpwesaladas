@@ -274,6 +274,21 @@ h3.display { font-size: clamp(26px, 3.4vw, 44px); }
   min-width: 0;
 }
 
+/* ── Bloco de Autoridade (imagem) ─────────────── */
+.authority-img-block {
+  padding: 0;
+  background: var(--white);
+}
+.authority-img-block .container {
+  padding: 0;
+  max-width: 100%;
+}
+.authority-img-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ── Hero VTurb video ─────────────── */
 .hero-vturb-wrap {
   margin-top: 24px;
